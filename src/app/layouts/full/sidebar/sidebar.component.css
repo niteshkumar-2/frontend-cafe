@@ -1,0 +1,36 @@
+/* sidebar.component.css */
+
+/* Style the sidebar container */
+mat-nav-list {
+  width: 250px;
+  background-color: #fff;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+/* Style the list items */
+mat-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Style the links */
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+/* Style the icons */
+mat-icon {
+  margin-right: 10px;
+}
+
+/* Selected link style */
+.selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
