@@ -40,7 +40,6 @@ export class ForgotPasswordComponent implements OnInit {
     };
     this.userService.forgotPassword(data).subscribe(
       (response: any) => {
-        console.log('Response', response);
         this.ngxService.stop();
         this.dialogRef.close();
         this.responseMessage = response?.message;

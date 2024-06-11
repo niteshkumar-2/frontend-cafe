@@ -17,7 +17,7 @@ export class SnackbarService {
       });
     }else{
       this.snackbar.open(message, '', {
-        horizontalPosition: 'center',
+        horizontalPosition: 'left',
         verticalPosition: 'top',
         duration: 2000,
         panelClass: ['green-snackbar'],

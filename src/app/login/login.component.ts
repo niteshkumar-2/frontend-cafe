@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
       password: formData.password
     };
 
-    this.userService.forgotPassword(data).subscribe(
+    this.userService.login(data).subscribe(
       (response: any) => {
         this.ngxService.stop();
         this.dialogRef.close();
@@ -65,3 +65,4 @@ export class LoginComponent implements OnInit {
     );
   }
 }
+
