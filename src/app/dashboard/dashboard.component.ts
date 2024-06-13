@@ -21,10 +21,10 @@ export class DashboardComponent implements AfterViewInit {
   ) { this.ngxService.start();this.dashboardData();
   }
 
-  // ngOnInit() {
-  //   this.ngxService.start(); // Start the loader when the component initializes
-  //   this.dashboardData();
-  // }
+  ngOnInit() {
+    this.ngxService.start(); // Start the loader when the component initializes
+    this.dashboardData();
+  }
 
   dashboardData() {
     this.dashboardService.getDetails().subscribe(
