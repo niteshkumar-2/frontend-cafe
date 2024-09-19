@@ -29,13 +29,13 @@ export class ProductService {
 
   updateStatus(data: any) {
     return this.httpclient.patch(`${this.url}/product/update/`, data, {
-      headers: this.headers,
+      headers:  new HttpHeaders().set('Content-Type', 'application/json')
     });
   }
 
   delete(id: any) {
     return this.httpclient.patch(`${this.url}/product/delete/${id}`, null, {
-      headers: this.headers,
+      headers:  new HttpHeaders().set('Content-Type', 'application/json')
     });
   }
 }
